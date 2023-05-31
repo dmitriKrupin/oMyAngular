@@ -11,11 +11,28 @@ import { RouterModule } from '@angular/router';
   ],
   template: `
   <main>
-    <a [routerLink]="['/']">
-      <header class="brand-name">
-        <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
-      </header>
-    </a>
+    <header class="brand-name">
+      <ul class="nav">
+        <li class="brand" [routerLink]="['/']">
+          <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+        </li>
+        <li class="search">
+          <a class="nav-link disabled" aria-current="page" href="#">ПОИСК ПО САЙТУ</a>
+        </li>
+        <li class="projects">
+          <a class="nav-link active" [routerLink]="['/projects']">ПРОЕКТЫ</a>
+        </li>
+        <li class="news">
+          <a class="nav-link active" [routerLink]="['/news']">НОВОСТИ</a>
+        </li>
+        <li class="contacts">
+          <a class="nav-link active" [routerLink]="['/about']">КОНТАКТЫ</a>
+        </li>
+        <li class="login">
+          <a class="nav-link disabled">ЛИЧНЫЙ КАБИНЕТ</a>
+        </li>
+      </ul>
+    </header>
     <section class="content">
     <router-outlet></router-outlet>
     </section>
