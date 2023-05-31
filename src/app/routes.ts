@@ -4,6 +4,7 @@ import { DetailsComponent } from './details/details.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LoginComponent } from './login/login.component';
 
 const routeConfig: Routes = [
     {
@@ -30,6 +31,11 @@ const routeConfig: Routes = [
       path: 'projects',
       component: ProjectsComponent,
       title: 'ПРОЕКТЫ'
+    },
+    {
+      path: 'login',
+      component: LoginComponent,
+      title: 'ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ'
     }
   ];
   
